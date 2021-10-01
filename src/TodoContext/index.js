@@ -30,7 +30,7 @@ const completeTodo = (text) => { //cambiar tarea completada
     saveTodos(newTodos); //asigna a el estado settodos los nuevos todos con completed = true
 
 }
-const deleteTodos = (text) => { //cambiar tarea completada
+const deleteTodo = (text) => { //cambiar tarea completada
     const todoIndex = todos.findIndex(todo => todo.text === text);//examinar todo por todo cual tiene el mismo texto, y nos vota la posicion donde esta
     const newTodos = [...todos];//en newtodos trae una copia de lo que haya en el estado todos
     newTodos.splice(todoIndex, 1) // cambiar en la posicion index el campo completed a true
@@ -55,7 +55,7 @@ const addTodo = (text) => {
             searchValue,
             setSearchValue,
             searchedTodos,
-            deleteTodos,
+            deleteTodo,
             completeTodo,
             loading,
             error,

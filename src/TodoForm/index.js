@@ -9,8 +9,7 @@ export function TodoForm() {
     } = useContext(TodoContext);
 
     const onCancel = () => {
-        //
-    }
+        setOpenModal(false);    }
     const onChange = (event) => {
         setNewTodoValue(event.target.value);
     }
